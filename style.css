@@ -1,0 +1,272 @@
+body{
+  background-color: #F5FEFD;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h2{
+  color: #737CA1;
+}
+p{
+  word-spacing: 3px;
+}
+nav {
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+.logo img {
+  height: 40px;
+}
+.all{
+  padding-top: 60px;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+.intro{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center space-around;
+  max-width: 1200px;
+}
+#intro_head, .intro_text{
+  align-items: center;
+  opacity: 0;
+   
+}
+#intro_head{
+  font-size: 50px;
+  animation: appear 0.7s ease-out 3s forwards;
+  color: #2dfff5;
+}
+.part_one{
+ color: #000;
+}
+.intro_text{
+  animation: appear 0.7s ease-out 4s forwards;
+  color: #000;
+}
+@keyframes appear{
+  100%{
+    opacity: 1;
+  }
+}
+#social img{
+  font-size: 48px;
+  justify-content: space-around;
+}
+.about{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  top: 65px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+#about_head{
+  font-size: 50px;
+}
+#about_pic{
+   max-width: 400px;
+   border-radius: 50%;
+}
+.about_details{
+  display: flex;
+}
+.class_info span{
+  color: #2dfff5;
+}
+.info_desc{
+  font-size: 30px;
+  color: #737CA1;
+}
+.skills{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  top: 65px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+.skills_head{
+  font-size: 50px;
+}
+.skill_details{
+  justify-content: space-around;
+}
+.achieve_head{
+  font-size: 60px;
+  text-align: center;
+}
+.achieve_details p{
+  margin: 5px;
+}
+.achieve_info span{
+  font-weight: 500;
+  color: #007bff;
+}
+.achieve_pics{
+  display: flex;
+}
+.pic_two{
+  flex-direction: column;
+}
+#tonnie_one{
+  max-width: 194px;
+  max-height: 293px;
+}
+#tonnie_two{
+  max-width: 579.7px;
+  max-height: 293px;
+}
+#tonnie_three{
+  max-width: 559.4px;
+  max-height: 1000px;
+}
+.blogs_head{
+  font-size: 60px;
+  text-align: center;
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;  
+  max-width: 916px;
+  width: calc(100% - 20px);
+}
+.card {
+  background-color: gray;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  position: relative;
+  width: 450px;
+  transition: 0.5s ease-in-out;  
+}
+.card .card_info{
+  margin-left: 8px;
+}
+.card:hover{
+  transform: translateY(8px);
+}
+.card img{
+  width: 224px;
+}
+.card button{
+  font-size: 15px;
+  padding:10px 20px;
+  border: none;
+  border-radius: 10px 5px;
+}
+.contact{
+  border-radius: 20px;
+  height: 100vh;
+  color: #000;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact h2{
+font-size: 60px;
+font-weight: 600;
+font-family: 'Rum Raisin', sans-serif;
+text-align: center;
+}
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+display: block;
+width: 90%;
+padding: 10px;
+margin-bottom: 20px;
+border: none;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+font-size: 16px;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+.contact textarea {
+resize: vertical;
+}
+
+.contact label {
+display: block;
+font-weight: bold;
+margin-bottom: 10px;
+text-align: left;
+}
+
+.contact button[type=submit],
+.contact button[type=reset] {
+display: block;
+padding: 10px 20px;
+margin-top: 20px;
+border: none;
+border-radius: 10px 5px;
+background-color: #007bff;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.contact button[type=submit],
+.contact button[type=reset]:hover {
+background-color: #0069d9;
+}
