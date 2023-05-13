@@ -135,13 +135,13 @@ section{
   align-items: center;
   justify-content: center;
 }
-.skills_head{
+#skills_head{
   font-size: 50px;
 }
 .skill_details{
   justify-content: space-around;
 }
-.achieve_head{
+#achieve_head{
   font-size: 60px;
   text-align: center;
 }
@@ -170,7 +170,7 @@ section{
   max-width: 559.4px;
   max-height: 1000px;
 }
-.blogs_head{
+#blogs_head{
   font-size: 60px;
   text-align: center;
 }
