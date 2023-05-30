@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 .logo img {
-  min-height: 40px;
+  height: 40px;
 }
 .toggle_btn{
   display: none;
