@@ -10,13 +10,13 @@ p{
 }
 nav {
   background-color: #fff;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  max-width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,16 +50,68 @@ nav a:hover {
 }
 
 .logo img {
-  height: 40px;
+  min-height: 40px;
+}
+.toggle_btn{
+  display: none;
+}
+
+.dropdown{
+  display: none;
+  position: absolute;
+  height: 0;
+  right: 2rem;
+  top: 100px;
+  max-width:200px;
+  overflow: hidden;
+  background-color: #555;
+  border-radius: 20px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #fff;
+}
+.drop{
+  max-width: 25px;
+}
+.dropdown.open{
+  min-height: 240px;
+}
+.dropdown ul{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.dropdown li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width:992px) {
+  nav li{
+    display: none;
+    color: #fff;
+  }
+  .toggle_btn{
+    display: block;
+  }
+  .dropdown{
+    display: block;
+  }
+  .about_details{
+    flex-direction: column;
+  }
+  .achieve_pics{
+    flex-direction: column;
+  }
 }
 .all{
   padding-top: 60px;
   scroll-snap-type: y proximity;
   overflow-y: scroll;
-  height: 100vh;
+  min-height: 100vh;
 }
 section{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,6 +167,7 @@ section{
 #about_pic{
    max-width: 400px;
    border-radius: 50%;
+   object-fit: contain;
 }
 .about_details{
   display: flex;
@@ -147,10 +200,12 @@ section{
 }
 .achieve_details p{
   margin: 5px;
+  word-wrap: break-word;
 }
 .achieve_info span{
   font-weight: 500;
   color: #007bff;
+  word-wrap: break-word;
 }
 .achieve_pics{
   display: flex;
@@ -187,13 +242,13 @@ section{
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  height: 260px;
+  min-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-around;
   position: relative;
-  width: 450px;
+  max-width: 450px;
   transition: 0.5s ease-in-out;  
 }
 .card .card_info{
@@ -203,7 +258,7 @@ section{
   transform: translateY(8px);
 }
 .card img{
-  width: 224px;
+  max-width: 224px;
 }
 .card button{
   font-size: 15px;
@@ -213,7 +268,7 @@ section{
 }
 .contact{
   border-radius: 20px;
-  height: 100vh;
+  min-height: 100vh;
   color: #000;
   display: flex;
   text-align: center;
@@ -230,7 +285,7 @@ text-align: center;
 .contact input[type=email],
 .contact textarea {
 display: block;
-width: 90%;
+max-width: 90%;
 padding: 10px;
 margin-bottom: 20px;
 border: none;
@@ -269,4 +324,7 @@ cursor: pointer;
 .contact button[type=submit],
 .contact button[type=reset]:hover {
 background-color: #0069d9;
+}
+.contact_icons{
+  display: flex;
 }

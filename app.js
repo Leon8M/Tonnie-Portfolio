@@ -19,3 +19,21 @@ for (var i = 0; i < scrollLinks.length; i++) {
     targetElement.scrollIntoView({ behavior: "smooth" }); // scroll to the target element
   });
 }
+const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = document.querySelector('.drop');
+const dropDown = document.querySelector('.dropdown');
+var arrow = './images/arrow.png';
+var cancel = './images/cancel.png';
+var isAlternate = false;
+
+toggleBtn.addEventListener("click", function (){
+  dropDown.classList.toggle('open');
+  const isOpen = dropDown.classList.contains('open');
+  if (isAlternate){
+    toggleBtnIcon.src = arrow;
+    isAlternate = false;
+  } else{
+    toggleBtnIcon.src = cancel;
+    isAlternate = true;
+  }
+});
