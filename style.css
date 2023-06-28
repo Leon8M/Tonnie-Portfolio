@@ -106,6 +106,9 @@ nav a:hover {
   #intro_head, #about_head, #skills_head, #achieve_head, .contact h2{
     font-size: 30px;
   }
+  section, .contact{
+    height: auto;
+  }
 }
 .all{
   padding-top: 60px;
@@ -195,6 +198,42 @@ section{
 }
 .skill_details{
   justify-content: space-around;
+}
+.skill_tree{
+  margin-top: 50px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;  
+  max-width: 100%;
+  width: calc(100% - 20px);
+}
+.skill{
+  background-color: #fff9d2;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  height: 35px;
+  position: relative;
+  width: 150px;
+  justify-content: space-around;
+  transition: 0.5s ease-in-out;
+}
+.skill:hover{
+  transform: translateY(10px);
+}
+.skill p{
+    color: #141C26;
+    font-size: 13px;
+}
+.skill img{
+    max-width: 36px;
+    height: 36px;
+    object-fit: cover;
 }
 .achieve{
   padding: 30px;
