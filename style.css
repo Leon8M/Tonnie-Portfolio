@@ -109,6 +109,9 @@ nav a:hover {
   section, .contact{
     height: auto;
   }
+  .skills h5{
+    font-size: 10px;
+  }
 }
 .all{
   padding-top: 60px;
@@ -225,6 +228,10 @@ section{
 }
 .skill:hover{
   transform: translateY(10px);
+}
+.skills h5{
+  font-size: 15px;
+  font-weight: 700;
 }
 .skill p{
     color: #141C26;
