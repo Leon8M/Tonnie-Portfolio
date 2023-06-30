@@ -125,7 +125,7 @@ body{
 }
 .dynamic-txts li{
   list-style: none;
-  color: #2dfff5;
+  color: #0072b1;
   font-size: 60px;
   font-weight: 500;
   position: relative;
@@ -152,7 +152,7 @@ body{
   height: 100%;
   width: 100%;
   background: #F5FEFD;
-  border-left: 2px solid #2dfff5;
+  border-left: 2px solid #0072b1;
   animation: typing 2.25s steps(10) infinite;
 }
 @keyframes typing {

@@ -112,6 +112,9 @@ nav a:hover {
   .skills h5{
     font-size: 10px;
   }
+  .contact{
+    margin-top: 20px;
+  }
 }
 .all{
   padding-top: 60px;
@@ -143,7 +146,7 @@ section{
 #intro_head{
   font-size: 50px;
   animation: appear 0.7s ease-out 3s forwards;
-  color: #2dfff5;
+  color: #0072b1;
 }
 .part_one{
  color: #000;
@@ -181,7 +184,7 @@ section{
   display: flex;
 }
 .class_info span{
-  color: #2dfff5;
+  color: #0072b1;
 }
 .info_desc{
   font-size: 30px;
@@ -254,7 +257,7 @@ section{
 }
 .achieve_info span{
   font-weight: 500;
-  color: #007bff;
+  color: #0072b1;
 }
 .achieve_pics{
   display: flex;
@@ -370,7 +373,11 @@ font-weight: bold;
 cursor: pointer;
 }
 
-.contact button[type=submit],
+.contact button[type=submit]:hover,
 .contact button[type=reset]:hover {
 background-color: #0069d9;
+}
+.contact_icons{
+  display: flex;
+  margin-top: 10px;
 }
